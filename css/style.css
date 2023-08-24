@@ -61,3 +61,8 @@ padding-top: 20px;
     width: 40%;
     justify-content: center;
 }
+
+#posts{
+   display: flex;
+   justify-content: center;
+}

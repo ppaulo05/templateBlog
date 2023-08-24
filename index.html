@@ -117,16 +117,25 @@
             </h4>
 
         </div>
+        <section id="posts" class="post container d-flex flex-wrap" ng-controller="Rest">
+            <div class="card rounded m-5 col-lg-2" style="width: 20rem" ng-repeat="publicacao in publicacoes">
+              <img
+                ng-src="https://api-rest-post-diegocandido.herokuapp.com{{ publicacao.thumbImage }}"
+                class="rounded card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <strong class="text-center">{{ publicacao.thumbImageAltText }}</strong>
+                <h5 class="card-title fw-bold">{{ publicacao.title }}</h5>
+                <a ng-click="details($index)" class="btn btn-primary fw-bold">Ler Mais</a>
+              </div>
+            </div> 
+          </section>
 
         <footer>
             <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.2);">
-<<<<<<< HEAD
-                © 2022 Copyright:
-                <a class="text-black" href="https://www.terra.com.br/esportes/futebol/historia-do-gremio-titulos-idolos-e-jogos-terra,c2083f1d71ced310VgnCLD200000bbcceb0aRCRD.html#:~:text=O%20Gr%C3%AAmio%20Foot%2DBall%20Porto,ganhar%20em%20outras%20sete%20oportunidades.">Blog Tricolor</a>
-=======
                 © 2023 Copyright:
                 <a class="text-black" href="https://mdbootstrap.com/">Blog Tricolor</a>
->>>>>>> eb7e9bec6f73b0bdc9d87f0fbcee3e39b74586c9
             </div>
         </footer>
 
